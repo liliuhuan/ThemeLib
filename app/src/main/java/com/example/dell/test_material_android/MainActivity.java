@@ -9,6 +9,7 @@ import com.google.android.material.chip.Chip;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
                 fabsShown = !fabsShown;
             }
         });
+
+
+        dealFragment();
+    }
+
+    private void dealFragment() {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
     }
 
 

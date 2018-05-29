@@ -23,28 +23,26 @@
             app:iconPadding="10dp"
             app:rippleColor="@color/colorPrimary"
             app:strokeColor="@color/colorPrimary"
-            app:strokeWidth="2dp" />
+            app:strokeWidth="1dp" />
 
         <com.google.android.material.chip.ChipGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            app:singleSelection="false"
+            android:padding="10dp"
             app:checkedChip="@color/colorPrimary"
-            android:layout_marginTop="30dp">
+            app:singleSelection="false">
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/ChipGroupChip1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Filter"
                 app:chipBackgroundColor="@color/colorAccent"
                 app:chipIcon="@drawable/ic_home_black_24dp"
+                app:chipIconEnabled="false"
                 app:chipText="Chip"
                 app:closeIcon="@drawable/ic_delete_black_24dp"
-                app:closeIconEnabled="true"
-                app:chipIconEnabled="false"
-                />
+                app:closeIconEnabled="true" />
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
@@ -60,6 +58,7 @@
                 app:chipIconEnabled="false"
                 app:chipText="good" />
         </com.google.android.material.chip.ChipGroup>
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab2"
             android:layout_width="wrap_content"
@@ -67,6 +66,35 @@
             android:layout_margin="10dp"
             app:fabSize="mini"
             app:srcCompat="@drawable/ic_3d_rotation_black_24dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:strokeColor="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MaterialCardView : Google is a comprehensive international company" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CardView: Google is a comprehensive international company" />
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
     <View
@@ -121,7 +149,4 @@
         </FrameLayout>
     </com.google.android.material.transformation.TransformationChildCard>
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
